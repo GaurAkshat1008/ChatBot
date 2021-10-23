@@ -16,7 +16,7 @@ function postSuccess(){
             executed = true;
         }
         if(post.value == "who are you?" | post.value == "who are you"){
-            $("#chat").append(`<h4 class="system">super duper chat bot!!</h4>`)
+            $("#chat").append(`<h4 class="system">super chat bot!!</h4>`)
         }
     }
     }
