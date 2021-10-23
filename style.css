@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 238, 238);
+    /* text-transform: capitalize; */
+}
+.container{
+    margin: 10px;
+    background-image: url("https://www.scalevp.com/sites/default/files/designbig.jpg");
+    background-position: center;    
+    border-left: 1px solid darkgray;
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 1px 5px -1px rgba(0, 0, 0, 0.4);
+}
+.container > .header{
+    flex: 0.1;
+    display: flex;
+    justify-content: center;
+    padding: 18px;
+    box-shadow:  0px 0px 10px -0.5px rgba(0, 0, 0, 0.4);
+    background-color: #fbb034;
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+    user-select: none;
+}
+.container > .header > h3{
+    font-size: 3rem;
+    background-color: transparent;
+    width: 100%;
+}
+.container > .chat{
+    margin-top: 10px;
+    flex: 0.8;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    border-bottom: 1px solid black;
+}
+.chat > .system{
+    margin-right: auto;
+    user-select: none;
+    text-transform: capitalize;
+    border: 1px solid #57fcbd;
+    background-color: #48fdb8;
+}
+.chat > .user{
+    margin-left: auto;
+    text-align: left;
+    border: 1px solid #FFCA28;
+    background-color: #fdd763;
+}
+.chat > h4{
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    width: max-content;
+    max-width: 60%;
+}
+.container > .input{
+    flex: 0.1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px;
+}
+.input > .text{
+    height: 20px;
+    width: 90%;
+    margin: 10px;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #FFCA28;
+    background-color: #f9ff60;
+    background-image: linear-gradient(315deg, #fbff95 0%, #fff5a5 74%);
+}
+.text:focus{
+    border: 2px solid #fdc10d;
+    outline: none;
+}
+.post{
+    width:15%;
+    padding: 8px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background-color: #FFCA28;
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+    border: none;
+    border-radius: 3px;
+    margin: 12px;
+}
+h5{
+    color: white;
+    font-size: 10px;
+    border-radius: 20px;
+    margin: 12px;
+    background-color: darkgray;   
+    padding: 5px;
+    text-transform: uppercase;
+    user-select: none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  } 
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #FFCA28;
+    border-radius: 10px;
+}
